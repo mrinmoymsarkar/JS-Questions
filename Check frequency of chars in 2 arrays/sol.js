@@ -18,6 +18,8 @@
 //   return true
 // }
 
+//o(n)sqaure
+
 function check(arr1, arr2){
     if(arr1.length != arr2.length){
     return false
