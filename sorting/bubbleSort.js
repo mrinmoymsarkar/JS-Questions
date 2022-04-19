@@ -1,15 +1,21 @@
-function bsort(array){
-  let sorted = [], temp
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length; j++) {
+//bubble sort optimised
+
+function sort(array){
+  let sorted = [], temp,
+    noSwap;
+  for (let i = array.length; i >0 ; i--) {
+    noSwap = true
+    for (let j = 0; j < i-1; j++) {
       if(array[j]> array[j+1]){
         temp = array[j];
         array[j] = array[j+1]; 
-        array[j+1] =temp;
+        array[j+1] = temp;
       }
+      console.count()
   }
+    if (noSwap) break;
   }
   return array;
 }
 
-bsort([5,1,5,3])
+sort([5,1,5,3])
